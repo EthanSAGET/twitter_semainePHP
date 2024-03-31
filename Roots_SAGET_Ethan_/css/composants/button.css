@@ -1,0 +1,42 @@
+.btn-test{
+    border: solid black;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    margin: 5px;
+    color: black;
+}
+.btn-test:hover{
+    border: solid black;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    margin: 5px;
+    color: white;
+    background-color: #175734;
+}
+
+.button{
+    /*position: absolute;
+    right: 150px;
+    top: 50px;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+
+@media (max-width : 1000px){
+    .btn-test{
+        font-size: 60%;
+    }
+}
+
+@media (max-width : 500px) {
+    .btn-test{
+        font-size: 20%;
+
+    }
+    
+}

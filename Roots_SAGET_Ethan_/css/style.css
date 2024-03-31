@@ -1,0 +1,21 @@
+@import url("./composants/logo.css");
+@import url("./composants/banner.css");
+@import url("./composants/navbar.css");
+@import url("./composants/avatar.css");
+@import url("./composants/boite-message.css");
+@import url("./composants/searchbar.css");
+@import url("./composants/button.css");
+@import url("./composants/container.css");
+@import url("./composants/post.css");
+@import url("./composants/modal.css");
+@import url("./composants/formulaire_inscription.css");
+
+header{
+    z-index:1;
+    backdrop-filter: blur(4px);
+     
+ }
+
+ body{
+    padding-top: 0px;
+ }

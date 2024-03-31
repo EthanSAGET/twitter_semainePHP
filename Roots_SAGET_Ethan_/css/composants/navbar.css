@@ -1,0 +1,404 @@
+/*.navbar{
+    width: 22em;
+    position: fixed;
+    top: 0px;
+    left: 0em;
+    bottom: 0em;
+    background: var(--navbar-background-color);
+    box-shadow: 0 4px 1px;
+    z-index: 2;
+    
+   
+}
+
+.navbaropen{
+    left : 0;
+}
+
+.navbar_menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-titre{
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem ;
+
+}
+.navbar-objet:hover{
+    color: white;
+    font-style: bold;
+    background-color:grey;
+    border-radius: 10%;
+    padding: 1.2em 1.2em;
+    border: solid black;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem ;
+
+}
+
+.navbar-icon{
+   font-size: 1.5rem;
+   padding-right: 1.5em;
+   padding-left: 1.1em;
+   color: black;
+
+}
+
+.navbar-objet{
+    width: 100%;
+    border-bottom:solid 1px var(--navbar-separator-color);
+    transition: background-color var(--navbar-transition-speed);
+    padding: 2em 1.2em;
+    align-items: center ;
+}
+
+.navbar-h2{
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    text-align: center;
+}
+.navbar-p{
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.avatar{
+  
+   display: flex;
+   justify-content: center;
+   margin-top: 2cm;
+}
+
+@media (max-width : 1300px){
+    
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #333;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar.show {
+    left: 0;
+  }
+  
+  .navbar_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .navbar-h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .navbar-p {
+    color: #aaa;
+    font-size: 0.8rem;
+  }
+  
+  .navbar-objet {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .navbar-lien {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar-lien:hover {
+    background-color: #555;
+  }
+  
+  .navbar-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .navbar-titre {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  #toggleSidebar {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .btn-navbar{
+    font-size: 1rem;
+    font-family: 'Kanit', sans-serif;
+    margin-left : 20px;
+
+    
+
+  }
+  
+  #closeSidebar {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  */
+  /* Style de base pour la navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style pour la navbar en mode ouvert */
+.navbar.active {
+  transform: translateX(0%);
+}
+
+/* Style pour le bouton ouvrir la sidebar */
+#toggleSidebar {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Style pour le bouton fermer la sidebar */
+#closeSidebar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Style pour le bouton fermer la sidebar en mode survol */
+#closeSidebar:hover {
+  color: #999;
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Style pour l'avatar */
+.avatar {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Style pour le titre et le sous-titre */
+.navbar-h2,
+.navbar-p {
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  
+}
+
+.navbar-h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-p {
+  margin-top: 5px;
+  font-size: 1em;
+  color: #999;
+}
+
+/* Style pour les liens de la navbar */
+.navbar-objet {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.navbar-lien {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-lien:hover {
+  background-color: #f5f5f5;
+}
+
+/* Style pour les icônes */
+.navbar-icon {
+  display: inline-block;
+  width: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+/* Style pour les titres des liens */
+.navbar-titre {
+  display: inline-block;
+  font-size: 1.2em;
+}
+
+/* Media queries pour rendre la navbar responsive */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    transform: translateX(-100%);
+  }
+
+  .navbar.active {
+    transform: translateX(0%);
+  }
+
+  #closeSidebar {
+    display: none;
+  }
+  
+  .navbar_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+
+
+.sidebar{
+  font-family: 'Kanit', sans-serif;
+  position: fixed;
+  top: 0px;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #111;
+  transition: all 300ms ease-in-out;
+}
+
+.sidebar .toogle-btn{
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.sidebar .toogle-btn span{
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #111;
+  transform:translateY(-50%);
+  transition: all 300ms ease-in-out;
+}
+
+.sidebar .toogle-btn span:nth-child(1){
+  top: 90%;
+   
+}
+
+.sidebar .links a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: green;
+  cursor: pointer;
+  border-bottom:1px solid #1b1b1b ;
+
+}
+
+.sidebar .links a.active,
+.sidebar .links a:hover{
+  background: #222;
+  color: #00ee7b;
+
+}
+
+.sidebar .links a i{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sidebar .active{
+  left: 0px;
+
+}
+
+.sidebar .active .toggle-btn span:nth-child(1){
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.sidebar .active .toggle-btn span:nth-child(2){
+  display: none;
+}
+
+.sidebar .active .toggle-btn span:nth-child(3){
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}

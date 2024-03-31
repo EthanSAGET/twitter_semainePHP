@@ -1,0 +1,21 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    padding-top: 200px;
+}
+
+.img_logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.titre, .sous-titre {
+    text-align: center;
+}
+
+.formulaire_button {
+    font-size: 1.1rem;
+}
+
+.formulaire_button:hover {
+    background-color: #175734;
+}
